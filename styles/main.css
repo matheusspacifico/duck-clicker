@@ -1,3 +1,98 @@
-.hello {
-    color: red;
+body {
+    background: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    width: 95%;
+    max-width: 1400px;
+    height: 90vh;
+    gap: 30px;
+}
+
+.duck-container {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.menu-container {
+    flex: 2;
+}
+
+.worker-left,
+.worker-right {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+.gameplay-container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.numba {
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+.the-duck-container {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+}
+
+#duck-protagonist {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 70px;
+    z-index: 1;
+}
+
+#duckonite {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 70px;
+    right: 40px;
+    z-index: 2;
+}
+
+#pickaxe {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    z-index: 2;
+    transform: rotate(-45deg);
 }
