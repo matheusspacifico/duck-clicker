@@ -10,6 +10,13 @@ body {
     align-items: center;
 }
 
+img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 .main-container {
     display: flex;
     width: 95%;
@@ -93,14 +100,22 @@ body {
     position: absolute;
     top: 80px;
     left: 20px;
-    z-index: 2;
+    z-index: 3;
     transform: rotate(-45deg);
 }
 
-.squish-animation {
-    
+.the-duck-container:active #pickaxe {
+    top: 96px;
+    left: 159px;
+    transform: rotate(60deg);
 }
 
-.mine-animation {
-    
+.the-duck-container:active #duck-protagonist {
+    transform: scale(1.05);
 }
+
+.the-duck-container:active #duckonite {
+    transform: scale(1.05);
+}
+
+
