@@ -18,8 +18,8 @@
             </div>
             <div class="gameplay-container">
                 <div class="numba">
-                    <p>numba1</p>
-                    <p>numba2</p>
+                    <p>Duckonites: <span id="counter"></span></p>
+                    <p>Duckonites per sec: <span id="dps-counter"></span></p>
                 </div>
                 <div class="the-duck-container" id="click-area">
                     <img src="./public/imgs/duck_protagonist.png" id="duck-protagonist" draggable="false">
@@ -34,12 +34,36 @@
         </section>
 
         <section class="menu-container">
-            <h1>shop section</h1>
-        </section>
+            <div class="menu-tabs">
+                <button class="menu-btn" data-tab="shop">Shop</button>
+                <button class="menu-btn" data-tab="upgrades">Upgrades</button>
+                <button class="menu-btn" data-tab="stats">Stats</button>
+                <button class="menu-btn" data-tab="settings">Settings</button>
+            </div>
+            <div class="menu-content">
+                <div id="shop" class="menu-panel active">
+                    <h2>Shop</h2>
+                    <p>Buy items to increase your production.</p>
+                </div>
+                <div id="upgrades" class="menu-panel">
+                    <h2>Upgrades</h2>
+                    <p>Upgrade your pickaxe and mining speed.</p>
+                </div>
+                <div id="stats" class="menu-panel">
+                    <h2>Stats</h2>
+                    <p>Track your progress and performance.</p>
+                </div>
+                <div id="settings" class="menu-panel">
+                    <h2>Settings</h2>
+                    <p>Adjust game settings and preferences.</p>
+                </div>
+            </div>
+        </section>        
 
     </main>
     
     <script src="./src/main.js"></script>
+    <script src="./src/menuTabs.js"></script>
     <script src="./src/settings.js"></script>
 </body>
 </html>

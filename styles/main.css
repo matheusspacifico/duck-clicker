@@ -36,10 +36,6 @@ img {
     border-radius: 12px;
 }
 
-.menu-container {
-    flex: 2;
-}
-
 .worker-left,
 .worker-right {
     flex: 2;
@@ -116,6 +112,47 @@ img {
 
 .the-duck-container:active #duckonite {
     transform: scale(1.05);
+}
+
+.menu-container {
+    flex: 2;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.menu-btn:hover, .menu-btn.active {
+    background: #666;
+}
+
+.menu-content {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-panel {
+    display: none;
+}
+
+.menu-panel.active {
+    display: block;
 }
 
 
