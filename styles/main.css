@@ -155,4 +155,10 @@ img {
     display: block;
 }
 
-
+.menu-panel img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
