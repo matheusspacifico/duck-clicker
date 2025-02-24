@@ -18,12 +18,14 @@
             </div>
             <div class="gameplay-container">
                 <div class="numba">
-                    <p>Duckonites: <span id="counter"></span></p>
-                    <p>Duckonites per sec: <span id="dps-counter"></span></p>
+                    <p class="main-counter">Duckonites: <span id="counter"></span></p>
+                    <p class="dps-counter">Duckonites per sec: <span id="dps-counter"></span></p>
                 </div>
                 <div class="the-duck-container" id="click-area">
-                    <img src="./public/imgs/duck_protagonist.png" id="duck-protagonist" draggable="false">
-                    <img src="./public/imgs/pickaxe_level1.png" id="pickaxe" draggable="false">
+                    <div class="duck-with-pickaxe">
+                        <img src="./public/imgs/duck_protagonist.png" id="duck-protagonist" draggable="false">
+                        <img src="./public/imgs/pickaxe_level1.png" id="pickaxe" draggable="false">
+                    </div>
                     <img src="./public/imgs/rocktest.png" id="duckonite" draggable="false">
                 </div>
             </div>
@@ -42,10 +44,10 @@
             </div>
             <div class="menu-content">
                 <div id="shop" class="menu-panel active">
-                    <img src="./public/imgs/duck_protagonist.png" class="worker-icon">
+                    <img src="./public/imgs/worker_duckling.png" class="worker-icon">
                     <h2>Duckling</h2>
                     <p>A friendly miner duck that is suspiciously similar to you.</p>
-                    <h2 class="buy-button">Buy!!!</h2>
+                    <button class="buy-btn">Buy!!!</button>
                 </div>
                 <div id="upgrades" class="menu-panel">
                     <h2>Upgrades</h2>

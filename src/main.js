@@ -4,7 +4,7 @@ let clickPower = 1
 let clickMultiplier = 1
 let totalClicks = 0
 
-setInterval(updateDps, 1000) // tick
+setInterval(updateTick, 1000) // tick
 
 const clickArea = document.getElementById("click-area")
 clickArea.addEventListener("click", duckClick)
@@ -24,8 +24,14 @@ function duckClick() {
     totalClicks++
 }
 
+function updateTick() {
+    updateDps()
+
+    document.title = duckonites.toFixed(0) + " | Duck Clicker"
+}
+
 function updateCounter() {
-    counter.textContent = Number.isInteger(duckonites) ? duckonites : duckonites.toFixed(1)
+    counter.textContent = duckonites.toFixed(0)
 }
 
 function updateDps() {

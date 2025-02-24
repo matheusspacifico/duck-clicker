@@ -1,6 +1,6 @@
 body {
     background: black;
-    font-family: Arial, sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: white;
     margin: 0;
     padding: 0;
@@ -8,6 +8,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 img {
@@ -61,6 +65,16 @@ img {
 
 .numba {
     flex: 1;
+    text-align: center;
+}
+
+.main-counter {
+    margin: 0;
+    font-size: 2.0rem;
+}
+
+.dps-counter {
+    margin: 0;
     font-size: 1.5rem;
 }
 
@@ -71,6 +85,11 @@ img {
     justify-content: center;
     position: relative;
     gap: 10px;
+}
+
+.duck-with-pickaxe {
+    position: relative;
+    display: inline-block;
 }
 
 #duck-protagonist {
@@ -94,14 +113,14 @@ img {
     height: 200px;
     width: 200px;
     position: absolute;
-    top: 80px;
+    top: 20px;
     left: 20px;
     z-index: 3;
     transform: rotate(-45deg);
 }
 
 .the-duck-container:active #pickaxe {
-    top: 96px;
+    top: 35px;
     left: 159px;
     transform: rotate(60deg);
 }
@@ -161,4 +180,18 @@ img {
     position: relative;
     z-index: 1;
     float: right;
+}
+
+.buy-btn {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.buy-btn:hover {
+    background-color: #666;
 }
