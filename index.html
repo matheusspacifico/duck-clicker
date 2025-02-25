@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duck Clicker</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/workers/duckling.css">
     <link rel="icon" href="https://fav.farm/🦆"/> 
 </head>
 <body>
@@ -13,8 +14,8 @@
 
         <section class="duck-container">
 
-            <div class="worker-left">
-                workers
+            <div class="worker-left" id="worker-left">
+                <!--Create a div for the first workers!! also add a limit-->
             </div>
             <div class="gameplay-container">
                 <div class="numba">
@@ -45,9 +46,10 @@
             <div class="menu-content">
                 <div id="shop" class="menu-panel active">
                     <img src="./public/imgs/worker_duckling.png" class="worker-icon">
-                    <h2>Duckling</h2>
+                    <h2>Duckling - <span id="duckling-amount">0</span></h2>
+                    <h3>Price: <span id="duckling-price">10</span> duckonites</h3>
                     <p>A friendly miner duck that is suspiciously similar to you.</p>
-                    <button class="buy-btn">Buy!!!</button>
+                    <button class="buy-btn" id="duckling-buy">Buy!!!</button>
                 </div>
                 <div id="upgrades" class="menu-panel">
                     <h2>Upgrades</h2>
@@ -69,5 +71,6 @@
     <script src="./src/main.js"></script>
     <script src="./src/menuTabs.js"></script>
     <script src="./src/settings.js"></script>
+    <script src="./src/workers/duckling.js"></script>
 </body>
 </html>
